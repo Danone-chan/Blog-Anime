@@ -1,6 +1,6 @@
-# 🌟 AnimeSpace - Meu Blog de Animes
+# 🌟 WordAnime - Meu Blog de Animes
 
-Seja bem-vindo ao **AnimeSpace**! Este é um projeto de um blog simples sobre a cultura pop japonesa, focado em animes e mangás. O site foi desenvolvido inteiramente por mim como um projeto prático para um trabalho escolar.
+Seja bem-vindo ao **WordAnime**! Este é um projeto de um blog simples sobre a cultura pop japonesa, focado em animes e mangás. O site foi desenvolvido inteiramente por mim como um projeto prático para um trabalho escolar.
 
 O objetivo principal foi aplicar conhecimentos básicos de estruturação web, estilização e interatividade dinâmica.
 
