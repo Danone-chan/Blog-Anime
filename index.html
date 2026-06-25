@@ -1,5 +1,179 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog de Animes</title>
+    <style>
+        /* Estilos Gerais */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
 
-  
-</html>
+        /* Cabeçalho */
+        header {
+            background-color: #ff5722; 
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        /* Menu de Navegação */
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff5722;
+        }
+
+        /* Layout Principal */
+        .container {
+            display: flex;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+            gap: 20px;
+        }
+
+        /* Área dos Posts */
+        main {
+            flex: 3;
+        }
+
+        .post {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .post h2 {
+            color: #ff5722;
+            margin-top: 0;
+        }
+
+        .post .data {
+            color: #777;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .post img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        /* --- NOVO: Estilo do Botão de Gostei --- */
+        .btn-like {
+            background-color: transparent;
+            border: 2px solid #ff5722;
+            color: #ff5722;
+            padding: 8px 16px;
+            font-size: 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-like:hover {
+            background-color: #ffb8a1;
+        }
+
+        /* Classe que será ativada pelo JavaScript quando clicar */
+        .btn-like.curtido {
+            background-color: #ff5722;
+            color: white;
+        }
+
+        /* Barra Lateral (Sidebar) */
+        aside {
+            flex: 1;
+        }
+
+        .widget {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .widget h3 {
+            margin-top: 0;
+            color: #333;
+            border-bottom: 2px solid #ff5722;
+            padding-bottom: 5px;
+        }
+
+        .widget ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .widget ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>AnimeSpace 🌟</h1>
+        <p>O seu portal sobre o mundo otaku!</p>
+    </header>
+
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Reviews</a>
+        <a href="#">Notícias</a>
+        <a href="#">Sobre Mim</a>
+    </nav>
+
+    <div class="container">
+        <main>
+            <article class="post">
+                <h2>Por que você deve assistir Jujutsu Kaisen?</h2>
+                <p class="data">Publicado em 25 de Junho de 2026</p>
+                <img src="https://via.placeholder.com/800x300/333333/FFFFFF?text=Imagem+de+Jujutsu+Kaisen" alt="Imagem Jujutsu Kaisen">
+                <p>Jujutsu Kaisen se tornou um dos animes mais populares dos últimos tempos, e não é à toa. A animação feita pelo estúdio MAPPA é incrível, as lutas são de tirar o fôlego e os personagens são super cativantes.</p>
+                <p>Neste post, vou te dar três motivos para começar a maratonar hoje mesmo...</p>
+                
+                <button class="btn-like" onclick="darLike(this)">❤️ Gostei (<span class="contador">0</span>)</button>
+            </article>
+
+            <article class="post">
+                <h2>Top 5 melhores aberturas de animes shounen</h2>
+                <p class="data">Publicado em 2
